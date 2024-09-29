@@ -2,12 +2,14 @@
 // Created by ran on 2024/3/1.
 //
 
-#ifndef INTERPRETER_COLLECTION_JSON_JSON_H_
-#define INTERPRETER_COLLECTION_JSON_JSON_H_
+#ifndef ZJSON_JSON_H_
+#define ZJSON_JSON_H_
 #include <stdlib.h>
 #include <stdint.h>
 #include "hashtable/hash_table_m.h"
-
+#ifdef __cplusplus
+extern "C" {
+#endif
 typedef char json_value_type;
 #define JSON_NULL (json_value_type)1
 #define JSON_FALSE (json_value_type)2
@@ -181,5 +183,7 @@ void json_copy(json_value *dest, const json_value *src);
 void json_move(json_value *dest, json_value *src);
 
 void json_swap(json_value *v1, json_value *v2);
-
-#endif //INTERPRETER_COLLECTION_JSON_JSON_H_
+#ifdef __cplusplus
+}
+#endif
+#endif //ZJSON_JSON_H_

@@ -20,14 +20,14 @@ This is a lightweight C library for parsing, creating, manipulating, and seriali
 - Simple memory management for dynamically allocated structures.
 ## Requirements
   - C Standard: C11
-  - Dependencies: The library uses a custom hashtable, provided by hashtable/hash_table_m.h. See: ``https://github.com/PL-play/build-collection``
+  - Dependencies: The library uses a custom hashtable, provided by hashtable/hash_table_m.h. See: `https://github.com/PL-play/build-collection`
 
 ## Installation
 To install the JSON library, follow these steps:
 1. Clone the repository: 
 
    ```
-    git clone git@github.com:PL-play/build-JSON.git`
+    git clone git@github.com:PL-play/build-JSON.git
    ```
 2. Build the library using CMake:
     ```

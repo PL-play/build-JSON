@@ -1,17 +1,14 @@
 cmake_minimum_required(VERSION 3.16)
 project(zjson C)
 
-# 查找 ZCollection 库
-find_package(ZCollection REQUIRED)
-
 set(CMAKE_C_STANDARD 11)
 
 # 包含头文件目录
 include_directories("include")
+include_directories("hashtable")
 
 # 添加静态库 ZJSON
 add_library(ZJSON STATIC src/zjson.c)
-target_link_libraries(ZJSON PUBLIC ZCollection::ZCollection)
 
 # 设置头文件的安装路径
 target_include_directories(ZJSON PUBLIC

@@ -11,7 +11,6 @@ This is a lightweight C library for parsing, creating, manipulating, and seriali
     - string
     - array
     - object
-    - 
 - Functions for parsing JSON strings into a JSON structure.
 - Functions for creating and manipulating JSON objects, arrays, and strings.
 - Ability to stringify JSON structures back into a JSON-formatted string.

@@ -6,7 +6,7 @@
 #define ZJSON_JSON_H_
 #include <stdlib.h>
 #include <stdint.h>
-#include "hashtable/hash_table_m.h"
+#include "hash_table_m.h"
 #ifdef __cplusplus
 extern "C" {
 #endif
